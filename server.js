@@ -6,8 +6,7 @@ var app            = express();
 var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
 var request        = require('request').defaults({json:true});
-//var LoginService            = require('services/LoginService');
-app.post('services/LoginService');
+var jquery         = require('jquery');
 
 var morgan      = require('morgan');
 var mongoose    = require('mongoose');
@@ -50,11 +49,10 @@ console.log('Magic happens on port ' + port);
 // expose app
 exports = module.exports = app;
 
-app.post('/LoginService', bodyParser(), function(req, res) {
+app.post('/LoginService', bodyParser.urlencoded(), function(req, res) {
     var user = req.body.formusername;
     var pass = req.body.formpassword;
     console.log("post received: %s %s", user, pass);
-    window.location.replace("/views/timeline.html");
+    res.redirect('timeline.html');
 });
-
 

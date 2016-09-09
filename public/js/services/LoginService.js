@@ -10,8 +10,8 @@ var app     = express();
 // app.use(express.bodyParser());
 
 
-app.post('/LoginService', bodyParser(), function(req, res) {
+/* app.post('/LoginService', bodyParser.urlencoded(), function(req, res) {
     var user = req.body.formusername;
     var pass = req.body.formpassword;
     console.log("post received: %s %s", user, pass);
-});
+}); */
