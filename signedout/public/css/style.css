@@ -1,0 +1,60 @@
+.bannerlogo {
+    width: 40%
+
+}
+
+.button-login {
+    background-color: white;
+    height: 35px;
+    width: 100px;
+    color: black;
+    border: none;
+    opacity: 1;
+    border-radius: 0;
+
+}
+
+.button-login:hover {
+    background-color: lightgrey;
+
+}
+
+.navbar {
+    margin-bottom: 50px;
+
+}
+
+.navbar-navigation {
+    margin-right: 50px;
+    color: darkgrey;
+}
+
+.navbar-header {
+    margin-left: 50px;
+}
+
+.bannerlogo-navbar{
+    height: 25px;
+
+}
+
+.navbarwords {
+    color: black;
+
+}
+
+.input-button-login {
+    height: 35px;
+
+}
+
+.footer {
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+
+.jumbotrons {
+    padding-bottom: 40%;
+
+}

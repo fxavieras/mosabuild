@@ -1,0 +1,11 @@
+
+<div class="jumbotrons text-center">
+    <img ng-src="{{ bannerlogor }}" class="bannerlogo"/>
+    <!-- Aug 30 2016 - trying to POST to PHP for mySQL auth... "cannot POST to url" help me :( -->
+    <form id="form-login" action="/LoginService" method="post">
+        <!-- change this to post ASAP. -->
+        <input type="text" placeholder="Email Address..." name="formusername" class="input-button-login"/>
+        <input type="password" placeholder="Password..." name="formpassword" class="input-button-login"/>
+        <input type="submit" value="Log In" class="button-login" name="submit"/>
+    </form>
+</div>
