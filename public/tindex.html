@@ -34,7 +34,7 @@
     <script src="node_modules/angular-lock/dist/angular-lock.js"></script>
     <script src="node_modules/angular-jwt/dist/angular-jwt.js"></script>
 </head>
-<body ng-app="sampleApp" ng-controller="MainController">
+<body ng-app="mainApp" ng-controller="MainController">
 <div class="containers">
 
     <!-- HEADER -->
@@ -47,6 +47,7 @@
 
         <!-- LINK TO OUR PAGES. ANGULAR HANDLES THE ROUTING HERE -->
         <div class="navbar-navigation">
+            <!--
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/login">
                     <div class="navbarwords">Login
@@ -57,6 +58,12 @@
                     <div class="navbarwords">Sign Up
                     </div></a></li>
             </ul>
+            -->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a onclick="replace('index.html');">
+                    <div class="navbarwords">Log Out
+                    </div></a></li>
+            </ul>
         </div>
     </div>
 
@@ -65,7 +72,7 @@
         <!-- When nothing from angular appears in index, check what files are included in app.js -->
 
         <div class="footer">
-            <p>Copyright Mosaikken Inc, 2016. Please don't steal our stuff!</p>
+            <p>This is the timeline.</p>
         </div>
     </div>
 
